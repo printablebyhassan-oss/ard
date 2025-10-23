@@ -1,269 +1,498 @@
-<!doctype html>
-<html lang="en">
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="glide.core.min.css">
-    <link rel="stylesheet" href="glide.theme.css">
-    <link rel="icon" type="image/ico" href="favicon.ico">
-    <link rel="stylesheet" href="main.css">
-    <title>Fortnite Chapter 2 V-Bucks Generator</title>
-
-</head>
-
-<body>
-
-    <div class="container">
-
-      <div class="row justify-content-center">
-
-        <div class="col-8 col-sm-6 col-md-4 text-center">
-
-          <img src="logo.png" class="img-fluid mb-4 mt-4">
-
-        </div>
-
-      </div>
-
-      <div class="row justify-content-center">
-
-        <div class="col-11 col-sm-9 col-md-7 text-center MAIN">
-
-          <section class="S1">
-
-            <h3 class="m-1">Type your username</h3>
-
-            <input class="form-control form-control-lg w-100 mx-auto mb-2 fs15rem" id="F-username" type="text" placeholder="Fortnite username" required>
-
-            <h3 class="mt-1 mb-0">Select your device</h3>
-
-            <div class="row justify-content-center pl-2 pr-2">
-
-              <div class="col-4 p-1 F-platform P-playstation" onclick="PLAT('playstation');">
-
-                <div class="xD">
-
-                  <img class="img-fluid w-75 pt-1 pb-1" src="playstation.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs12rem">PlayStation</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-4 p-1 F-platform P-xbox" onclick="PLAT('xbox');">
-
-                <div class="xD">
-
-                  <img class="img-fluid w-75 pt-1 pb-1" src="xbox.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs12rem">XBOX</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-4 p-1 F-platform P-switch" onclick="PLAT('switch');">
-
-                <div class="xD">
-
-                  <img class="img-fluid w-75 pt-1 pb-1" src="switch.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs12rem">Switch</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-4 p-1 F-platform P-android" onclick="PLAT('android');">
-
-                <div class="xD">
-
-                  <img class="img-fluid w-75 pt-1 pb-1" src="android.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs12rem">Android</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-4 p-1 F-platform P-apple" onclick="PLAT('apple');">
-
-                <div class="xD">
-
-                  <img class="img-fluid w-75 pt-1 pb-1" src="apple.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs12rem">iOS</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-4 p-1 F-platform P-desktop" onclick="PLAT('desktop');">
-
-                <div class="xD">
-
-                  <img class="img-fluid w-75 pt-1 pb-1" src="desktop.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs12rem">Desktop</p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <button type="button" class="btn btn-lg btn-warning w-100 mt-2 TTU C-button fs2rem" onclick="CCC();">Continue</button>
-
-          </section>
-
-          <section class="S2">
-
-            <h3>Select how much free V-Bucks you want</h3>
-
-            <div class="row justify-content-center">
-
-              <div class="col-6 p-1 V-bucks V-1000" onclick="VB('1000');">
-
-                <div class="xD">
-
-                  <img class="img-fluid pt-1 pb-1" src="1.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs13rem">1000 V-Bucks</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-6 p-1 V-bucks V-2800" onclick="VB('2800');">
-
-                <div class="xD">
-
-                  <img class="img-fluid pt-1 pb-1" src="2.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs13rem">2800 V-Bucks</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-6 p-1 V-bucks V-7500" onclick="VB('7500');">
-
-                <div class="xD">
-
-                  <img class="img-fluid pt-1 pb-1" src="3.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs13rem">7500 V-Bucks</p>
-
-                </div>
-
-              </div>
-
-              <div class="col-6 p-1 V-bucks V-13500" onclick="VB('13500');">
-
-                <div class="xD">
-
-                  <img class="img-fluid pt-1 pb-1" src="4.png">
-
-                  <p class="mb-1 TTN LH1 pb-1 fs13rem">13500 V-Bucks</p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <button type="button" class="btn btn-lg btn-warning w-100 mt-2 TTU S-button fs2rem" onclick="SKIN();">Continue</button>
-
-          </section>
-
-          <section class="S3">
-
-            <h3 class="m-1">Select your new skin</h3>
-
-            <div class="glide">
-
-              <div class="glide__track" data-glide-el="track">
-
-                <ul class="glide__slides">
-
-                  <li class="glide__slide">
-
-                    <img class="img-fluid w-60" src="8BALL.png">
-                    <h2 class="m-0 FNB TTN">8-Ball <small class="fs50 epic p-1">EPIC</small></h2>
-                    <h4 class="TTN FNB mb-0">Rack 'em up!</h4>
-
-                  </li>
-
-                  <li class="glide__slide">
-
-                    <img class="img-fluid w-60" src="RIPPLEY.png">
-                    <h2 class="m-0 FNB TTN">Rippley <small class="fs50 epic p-1">RARE</small></h2>
-                    <h4 class="TTN FNB mb-0">Drippy and dangerous.</h4>
-
-                  </li>
-
-                  <li class="glide__slide">
-
-                    <img class="img-fluid w-60" src="CAMEO.png">
-                    <h2 class="m-0 FNB TTN">Cameo <small class="fs50 rare p-1">EPIC</small></h2>
-                    <h4 class="TTN FNB mb-0">Make your appearance.</h4>
-
-                  </li>
-
-                  <li class="glide__slide">
-
-                    <img class="img-fluid w-60" src="FUSION.png">
-                    <h2 class="m-0 FNB TTN">Fusion <small class="fs50 rare p-1">EPIC</small></h2>
-                    <h4 class="TTN FNB mb-0">Merged into one.</h4>
-
-                  </li>
-
-                </ul>
-
-              </div>
-
-              <div class="glide__arrows" data-glide-el="controls">
-               <button class="glide__arrow glide__arrow--left pl-3 pr-3 pb-1 pt-2" data-glide-dir="<"><</button>
-               <button class="glide__arrow glide__arrow--right pl-3 pr-3 pb-1 pt-2" data-glide-dir=">">></button>
-             </div>
-
-            </div>
-
-            <button type="button" class="btn btn-lg btn-warning w-100 mt-2 TTU F-button fs2rem" onclick="FIN();">Continue</button>
-
-          </section>
-
-          <section class="S4">
-
-            <h3 class="m-1">Finishing process</h3>
-
-            <div class="console-1">
-
-              <div class="console-2 fs13rem"></div>
-
-            </div>
-
-            <button type="button" class="btn btn-lg btn-warning w-100 mt-2 TTU CL-button fs2rem" onclick="call_locker();">Verify</button>
-
-          </section>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="glide.min.js"></script>
-    <script src="typed.js"></script>
-    <script src="main.js"></script>
-
-</body>
+		<title> Season 21/22 </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="description" content="PES 2021 Smoke Patch 21.4.1 Season 21/22
+" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<meta name="theme-color" content="#000000">
+		<!-- Open Graph Meta Tags-->
+		<meta property="og:title" content="PES 2021 Smoke Patch 21.4.1 Season 21/22
+" /> <!-- PES 2021 Smoke Patch 21.4.1 Season 21/22
+  site is shared on social networks -->
+		<meta property="og:description" content="Apk Beast • Free App Tweaks & Mods" /> <!-- Website موقع زيادة مشتركين يوتيوب 2021 مجاناً | مشتركين حقيقيين بدون مقابل.
+PES 2021 Smoke Patch 21.4.1 Season 21/22
+
+
+مشتركين يوتيوب مجانا.
+طريقه زياده مشتركين اليوتيوب بضغطه زر 
+زيادة عدد المشاهدات والمشاركين في قناتك على اليوتيوب بطريقة شرعية و مضمونة
+برنامج زيادة مشتركين ومشاهدات قنوات اليوتيوب رائع وامن تابع للاخير زيادة عدد المشتركين على قناتك في اليوتيوب n your site is shared on social networks -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148218009-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148218009-1');
+</script>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="www..com" /> <!-- Your Website URL --><!-- Twitter Meta -->
+		<!-- Icons -->
+		<link rel="stylesheet" href="css/icon-font.min.css">
+        <link rel="stylesheet" href="css/all2.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900&amp;display=swap" rel="stylesheet">
+		<!-- CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/animate.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/sweetalert2.css" rel="stylesheet" />
+		<script src="js/vanillatoasts.js"></script>
+		<script src="js/live.js"></script>
+		<link href="css/vanillatoasts.css" rel="stylesheet" />
+
+		<style>
+		input[type="value"]{
+			font-size: 32px;
+		}
+		input[type="text"]{
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: #e7e7e7;
+		border: 0;
+		border-radius: 10px;
+		color: #222222;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;
+		}
+		input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+		}
+		input {
+		color: #222222;
+		font-size: 30px;
+		font-weight: 600;
+		letter-spacing: 0.025em;
+		line-height: 1.65;
+		}
+		#spiner {
+			font-size: 2.6em;
+			display: block;
+			text-align: center;
+			margin: 20px auto;
+			color: #8400ff;
+		}
+		.hide {
+			display: none;
+		}
+		.swal2-popup {
+			border-radius: 30px;
+		}
+		.float{
+			position:fixed;
+			width:55px;
+			height:55px;
+			bottom:40px;
+			right:40px;
+			background-color:#8400ff;
+			color:#FFF;
+			border-radius:50px;
+			text-align:center;
+			box-shadow: 2px 2px 3px #999;
+		}
+		.float:hover {
+			color: #000;
+			background-color: #fff;
+		}
+		.my-float{
+			margin-top:19px;
+		}
+		strike {
+			color: red;
+		}
+		</style>
+	</head>
+	<body onload="create()">
+		<div id="bg"></div>
+		<div class="overlay-pattern"></div>
+		<div class="overlay"></div>
+		<section class="app-download-section">
+			<div class="container">
+				<div class="app-download-wrapper animated flipInX">
+					<div class="app-icon-wrapper">
+						<div class="app-icon-inner-wrapper">
+							<img src="img/favicon.png" class="app-icon-img img-fluid" />
+						</div>
+					</div>
+					<div class="app-download-content">
+						<div class="app-download-content-header">
+							<h1><span> Season 21/22 </span> •  Sehen Sie sich das Video an, bevor Sie es herunterladen •</h1>
+							<span>Letztes Update 2022
+</span>
+						</div>
+						<div class="app-download-status">
+							<div class="status-row row-first animated bounceIn animation-delay-700">
+								<span class="status-label">Status:</span>
+								<span id="Status" class="status-dynamic">jetzt aktiv</span>
+							</div>
+							<div class="status-row row-second odd animated bounceIn animation-delay-900">
+								<span class="status-label">LETZTE AKTUALISIERUNG:</span>
+								<span id="date" class="status-dynamic"></span>
+							</div>
+							<div class="status-row row-last animated bounceIn animation-delay-80000">
+								<span class="status-label">ONLINE BENUTZER:</span>
+								<span id="online-count" class="status-dynamic"></span>
+	</div>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/v5LHM_p1X4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div id="control">
+						
+							<div class="app-download-main animated bounceIn">
+								<div class="button-wrapper">
+									<div id="b-1" onclick="nexT();playAu()" class="button animated pulse infinite"><span>Holen Sie sich jetzt das Update</span></div>
+								</div>
+								<div style="margin-top: 30px;">
+								</div>
+							</div>
+						</div>
+						<div id="show" class="hide">
+							<div class="app-download-main animated bounceIn">
+									<p class="app-download-intro-text">Schreiben Sie hier Ihren Namen hin</p>
+								    <form action="javascript:void(0);"name="Form">
+										<input type="text" name="usernameInput" value=""required />
+									</form>
+									<br>
+								<p class="app-download-intro-text">Wählen Sie das Betriebssystem aus</p>
+								<div class="field-wrapper platform-field-wrapper">
+									<div id="devices">
+									<div class="row small-margin">
+										<div class="col small-padding">
+											<div onclick="playA()" class="platform-item platform-item-1">
+												<i class="fab PC und Playstation"></i>
+												<span>PC und Playstation</span>
+											</div>
+										</div>
+										<div class="col small-padding">
+											<div onclick="playA()" class="platform-item platform-item-2">
+												<i class="fab fa-appl"></i>
+												<span>Mobilte und Xbox</span>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div>
+						<p class="app-download-intro-text">Wählen Sie die Version aus:</p>
+						<div id="currency">
+								<div class="row small-margin">
+										<div class="col small-padding">
+											<div onclick="playA()" class="platform-item1 platform-item-1">
+												<img src="img/subscribers.png">
+												<span> Ausgabe 4.0 <br></span>
+											</div>
+										</div>
+										<div class="col small-padding">
+											<div onclick="playA()" class="platform-item1 platform-item-2">
+												<img src="img/subscribers.png">
+												<span>Ausgabe 4.1 <br></span>
+											</div>
+										</div>
+										<div class="col small-padding">
+											<div onclick="playA()" class="platform-item1 platform-item-2">
+												<img src="img/subscribers.png">
+												<span> Ausgabe 4.2.0 <br></span>
+											</div>
+										</div>
+										<div class="col small-padding">
+											<div onclick="playA()" class="platform-item1 platform-item-2">
+												<img src="img/subscribers.png">
+												<span>Ausgabe 4.2.1<br></span>
+											</div>
+										</div>
+										<div class="button-wrapper">
+												<div id="b-2" onclick="playAu(); nexT1()" class="button animated pulse infinite"><span class="lnr lnr-download"></span><span>hier drücken</span></div>
+										</div>
+								</div>
+								</div>
+						</div>
+						</div>
+						<div id="verify" class="hide">
+								<div class="app-download-main animated bounceIn">
+									<div class="app-download-content-header">
+							        <span>Der letzte Schritt, um das Update zu erhalten </span></div>
+                                                                 <span>Drücken Sie im letzten Schritt JETZT PRÜFEN und wählen Sie ein beliebiges Angebot aus, um zu überprüfen, ob Sie eine echte Person sind, geben Sie die Telefonnummer ein und aktivieren Sie den Handycode und aktivieren Sie den Code, der Sie erreicht hat
+Der letzte Schritt, um das Update zu erhalten Klicken Sie jetzt auf das Captcha </span></div> 
+									<p>The final step to get the update 
+
+Click on the captcha now"
+
+ </p>
+									<div id="spiner" class="fas fa-spinner fa-spin"></div>
+									<div class="app-download-content-header">
+                                    <span> die restliche Zeit: </span>
+                                    </div>
+                                    <p id="time" style=" font-weight: bold;"></p>
+									<div class="button-wrapper">
+										<a href="https://nobots.cc/1ccc299"><div id="b-1" class="button animated pulse infinite"><span class="lnr lnr-download"></span><span>JETZT PRÜFEN</span></div></a>
+										</div>
+								</div>
+						</div>
+						</div>
+						</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<p>&copy; PES 2021 Smoke Patch 21.4.1 Letztes Update 2022</p>
+				</div>
+			</div>
+		</footer>
+		<div class="X650d"></div>
+		<audio id="myAudio">
+			<source src="sounds/click.html" type="audio/ogg">
+			<source src="sounds/click-2.html" type="audio/mpeg">
+		</audio>
+		<audio id="myAu">
+			<source src="sounds/choose.html" type="audio/ogg">
+			<source src="sounds/choose-2.html" type="audio/mpeg">
+		</audio>
+		<audio id="myAA">
+			<source src="sounds/success.html" type="audio/ogg">
+			<source src="sounds/success-2.html" type="audio/mpeg">
+		</audio>
+		<audio id="myerror">
+			<source src="sounds/error.html" type="audio/ogg">
+			<source src="sounds/error-2.html" type="audio/mpeg">
+		</audio>
+
+	</body>
+	<!-- JS -->
+	<script>
+		function random(min,max)
+			{
+				return Math.floor(Math.random()*(max-min+1)+min);
+			}
+
+			var initial = random(300, 400);
+			var count = initial;
+
+			setInterval(function() {
+				var variation = random(-5,5);
+
+				count += variation
+				document.getElementById("online-count").innerHTML = count;
+
+			}, 1000)
+		</script>
+		<script>
+			var d = new Date();
+			document.getElementById("date").innerHTML = d.toDateString();
+		</script>
+		<script>
+		var z = document.getElementById("myAA")
+        function nexT() {
+        let timerInterval
+          Swal.fire({
+            timer: 5000,
+            imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif',
+            imageAlt: 'Warten',
+			title: 'Warten',
+            showConfirmButton: false,
+            onClose: () => {
+              clearInterval(timerInterval)
+            }
+
+          }).then(function() {
+			var x = document.getElementById("control");
+			  if (x.style.display === "none") {
+				x.style.display = "block";
+			  } else {
+					x.style.display = "none";
+				}
+			z.play();
+			var element = document.getElementById("show");
+			element.classList.remove("hide");
+			Swal.fire({
+			type: 'success',
+			title: 'Die Anfrage wurde erfolgreich abgeschlossen',
+			showConfirmButton: false,
+			timer: 3000,
+			onClose: () => {
+              clearInterval(timerInterval)
+            }
+			})
+			})
+        }
+		function nexT1() {
+		let username = document.forms["Form"]["usernameInput"].value;
+		if (username== null || username == "") {
+      alert("Please put your name");
+    } else {
+		let timerInterval
+          Swal.fire({
+            timer: 5000,
+            imageUrl: 'https://englishpiece.com/LoaderIcon.gif',
+			imageAlt: 'moment please',
+			title: 'Suche nach Version',
+            showConfirmButton: false,
+            onClose: () => {
+              clearInterval(timerInterval)
+            }
+
+          }).then(function() {
+			z.play();
+			Swal.fire({
+			type: 'success',
+			title: 'Version gefunden',
+			showConfirmButton: false,
+			timer: 3000,
+			onClose: () => {
+              clearInterval(timerInterval)
+            }
+			}).then(function() {
+				Swal.fire({
+				timer: 5000,
+				imageUrl: 'https://englishpiece.com/LoaderIcon.gif',
+				imageAlt: 'Warten',
+				title: 'Bekomme es jetzt warte ',
+				showConfirmButton: false,
+				onClose: () => {
+				clearInterval(timerInterval)
+				}
+				}).then (function(){
+					z.play();
+					Swal.fire({
+					type: 'success',
+					title: 'Downloadlink erstellt ',
+					showConfirmButton: false,
+					timer: 3000,
+					onClose: () => {
+					clearInterval(timerInterval)
+					}
+                      }).then(function() {
+						Swal.fire({
+						timer: 5000,
+						imageUrl: 'https://englishpiece.com/LoaderIcon.gif',
+						imageAlt: 'Warten',
+						title: 'Warten',
+						showConfirmButton: false,
+						onClose: () => {
+						clearInterval(timerInterval)
+						}
+						}).then(function() {
+							b.play();
+							Swal.fire({
+							type: 'error',
+							title: 'Der letzte Schritt, drücken Sie und geben Sie Ihre Telefonnummer ein und aktivieren Sie den Code, der Sie erreicht',
+							showConfirmButton: false,
+							timer: 3000,
+							onClose: () => {
+							clearInterval(timerInterval)
+							}
+							}).then(function(){
+								var element = document.getElementById("show");
+								element.classList.add("hide");
+								var element1 = document.getElementById("verify");
+								element1.classList.remove("hide");
+							})
+						})
+					})
+				})
+			})
+		})
+	}
+        }
+		</script>
+      <script>
+          // Add active class to the current button (highlight it)
+          var header = document.getElementById("devices");
+          var btns = header.getElementsByClassName("platform-item");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
+              current[0].className = current[0].className.replace(" active", "");
+            }
+            this.className += " active";
+            });
+          }
+		</script>
+		<script>
+					// Add active class to the current button (highlight it)
+					var header = document.getElementById("currency");
+					var btns = header.getElementsByClassName("platform-item1");
+					for (var i = 0; i < btns.length; i++) {
+					  btns[i].addEventListener("click", function() {
+					  var current = document.getElementsByClassName("active1");
+					  if (current.length > 0) {
+						current[0].className = current[0].className.replace(" active1", "");
+					  }
+					  this.className += " active1";
+					  });
+					}
+		</script>
+		<script>
+					// Add active class to the current button (highlight it)
+					var header = document.getElementById("test");
+					var btns = header.getElementsByClassName("platform-item2");
+					for (var i = 0; i < btns.length; i++) {
+					  btns[i].addEventListener("click", function() {
+					  var current = document.getElementsByClassName("active2");
+					  if (current.length > 0) {
+						current[0].className = current[0].className.replace(" active2", "");
+					  }
+					  this.className += " active2";
+					  });
+					}
+		</script>
+		<script>
+			var x = document.getElementById("myAudio");
+			var y = document.getElementById("myAu")
+			var z = document.getElementById("myAA")
+			var b = document.getElementById("myerror")
+			function playAu() {
+			  x.play();
+			}
+			function playA() {
+			  y.play();
+			}
+			function playAA() {
+			  z.play();
+			}
+			function playerror() {
+			  b.play();
+			}
+			</script>
+			<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        الدقائق = parseInt(timer / 60, 10);
+        ثواني = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + " minutes and " + seconds+ " seconds";
+
+        if (--timer < 0) {
+             display.textContent = "   ein paar Sekunden... " ;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 6,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
+		<script src="js/jquery.min.html"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/sweetalert2.js"></script>
 
 </html>
