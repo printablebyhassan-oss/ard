@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA 16 Mod eFootball 2026</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: #0f111a; color: #fff; margin:0; }
+  header { text-align:center; padding:50px 20px; background: #111; }
+  header h1 { font-size:2.5em; color:#ffcc00; }
+  .features { display:flex; flex-wrap:wrap; justify-content:center; padding:20px; }
+  .feature { flex:1 1 250px; margin:10px; padding:20px; background:#222; border-radius:10px; text-align:center; }
+  .feature h3 { color:#ffcc00; }
+  .cta { text-align:center; margin:30px; }
+  .cta a { background:#ffcc00; color:#111; padding:15px 30px; font-size:1.2em; text-decoration:none; border-radius:10px; }
+  footer { text-align:center; padding:20px; background:#111; font-size:0.9em; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Play FIFA 16 Mod eFootball 2026!</h1>
+  <p>Offline Gameplay | Latest Transfers 2025/2026 | New Kits & Jerseys</p>
+</header>
+
+<section class="features">
+  <div class="feature">
+    <h3>Offline Gameplay</h3>
+    <p>Play anywhere without internet connection.</p>
+  </div>
+  <div class="feature">
+    <h3>Latest Transfers</h3>
+    <p>All top leagues updated for 2025/2026 season.</p>
+  </div>
+  <div class="feature">
+    <h3>Real Player Faces</h3>
+    <p>Recognize all your favorite stars instantly!</p>
+  </div>
+  <div class="feature">
+    <h3>Improved Graphics</h3>
+    <p>Better stadiums, lighting, and smooth gameplay.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <a href="YOUR_CPA_LOCKER_URL" target="_blank">Download Now – Free!</a>
+</section>
+
+<footer>
+  <p>Please complete the verification step to access the download link.</p>
+  <p>© 2025 MyStore – All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
